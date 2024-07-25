@@ -4,7 +4,9 @@ const app = express();
 var cors = require('cors')
 // Middleware for parsing JSON
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: 'https://hostel-enclave.vercel.app'
+}));
 
 const connectDB = require('./config/dbConnection.js');
 connectDB();
