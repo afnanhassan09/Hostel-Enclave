@@ -31,7 +31,7 @@ async function sendGetRequest() {
     }
 }
 
-setInterval(sendGetRequest, 1 * 60 * 1000);
+setInterval(sendGetRequest, 10 * 60 * 1000);
 
 sendGetRequest();
 
